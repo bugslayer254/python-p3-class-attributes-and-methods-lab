@@ -7,3 +7,11 @@ def pytest_itemcollected(item):
     suf = node.__doc__.strip() if node.__doc__ else node.__name__
     if pref or suf:
         item._nodeid = ' '.join((pref, suf))
+
+# ninety_nine_problems = Song("99 Problems", "Jay-Z", "Rap")
+# hello = Song("Hello", "Adele", "Pop")
+# empire = Song("Empire State of Mind", "Jay-Z", "Rap")
+
+# print(ninety_nine_problems.name)     # "99 Problems"
+# print(ninety_nine_problems.artist)   # "Jay-Z"
+# print(ninety_nine_problems.genre)    # "Rap"
